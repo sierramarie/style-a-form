@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+img { 
+    width: 100%;
+}
+
+body {
+    padding: 20px;
+    background: #f5f5f5;
+}
+.card {
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2); 
+    background-color: #ffffff; 
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field>label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field > input[type=text],
+.field > input[type=password] {
+    width: 100%;
+    height: 40px;
+    border: 1 px solid silver;
+    border-radius: 4pxg; 
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0,0.1)
+}
+
+.field > select {
+    width: 100%;
+    height: 40px;
+}
+
+.field.labels-wrapping > label {
+    font-weight: normal;
+}
+
+.field.labels-wrapping > label:first-child {
+    font-weight: bold;
+}
+
+}
+
+.field.field-centered {
+    text-align: center;
+}
+
+.field > button {
+    background: darkslateblue;
+    color: white;
+    border: none; 
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.field > button: hover {
+    transform: scale(2); 
+}
+
