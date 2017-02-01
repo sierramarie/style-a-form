@@ -9,55 +9,88 @@
   <link rel="stylesheet" href="css/global.css" />
 </head>
 <body>
+  <div class="card">
+    <form method="post" action"">
+      <img src="img/dreamcatchers.jpg" alt="Dreamcatchers"/>
 
-    <div class="card">
+       <!--<p style="text-align:center;font-size:20px;"/><input type="radio" id="whiteDreamcatcher" name="options" value="White Dreamcatcher" />-->
+       <div class="field-color">
+       <label>Color:</label>
+       </div><br/>
 
-      <form method="post" action="">
-
-
-        <div class"field"> 
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="first-name" required />
-        </div> 
-
-        <div class"field"> 
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="Late-Name" required />
-        </div>
-          
-          
-          <div class"field"> 
-            <label for"refferedby">Reffered by</label>
-            <select id="refferredby" name"referred-by" required/>
-            <option value="google">Google</option>
-            <option value="option">Twitter</option>
-            <option value="tv">Tv</option>
-            <option value="friend">Friend</option>
-            
-           </div>
-          <div class="field labels-wrapping">
-              <label>
-                How would you rate our service?
-               </label>    
-              <label>
-                <input type="radio" name="rating" valute="10">Awesome 
-                </label> 
-            <label>
-              <input type="radio" name="rating" value="5"> just okay.
-              </label>
-              <label>
-              <input type="radio" name="rating" value="1"> Terrible.</label>
-
-              <div class="field field-centered">
-                <button type="submit">Send</button>
-
-              </div>
-
-        
-
-      </form>
-
+     <div class="radio">
+       <input type="radio" id="whiteDreamcatcher" name="options" value="White Dreamcatcher" /></div>
+    <label class="colors" for="whiteDreamcatcher">White</label><br/>
+    <!--<p style="text-align:center;font-size:20px;"/><input type="radio" id="mintDreamcatcher" name="options" value="Mint Dreamcatcher" />-->
+    <div class="radio"><input type="radio" id="mintDreamcatcher" name="options" value="Mint Dreamcatcher" />
     </div>
+    <label class="colors" for="mintDreamcatcher">Mint</label><br/>
+    <!--
+    <input type="radio" id="peachDreamcatcher" name="options" value="Peach Dreamcatcher" />-->
+    <div class="radio"><input type="radio" id="peachDreamcatcher" name="options" value="Peach Dreamcatcher" />
+    </div>
+    <label class="colors" for="peachDreamcatcher">Peach</label><br/><br/>
+    
 
+    <!--<p style="text-align:center;font-size:20px;"/><label for="Size-and-price">Size & Price</label><br/>-->
+    <div class="size">
+    <label for="Size-and-price">Size & Price:</label><br/> </div><br/>
+    <select id="size" name="size">
+        <option value="SM $7.99">Small $7.99</option>
+        <option value="MD $12.99">Medium $12.99</option>
+        <option value="LG $18.99">Large $18.99</option>
+        </select><br/><br/>
+    
+
+    <!--<p style="text-align:center;font-size:20px;"/><label for="quantity">Quantity:</label><br/>
+    <label for="quantity">Quantity:</label><br/>
+    <input type="text" id="quantity" name="Quantity"/><br/></p>-->
+
+  
+
+    <!--<p style="text-align:center;font-size:20px;"/><strong>Personal Information:</strong></p>-->
+   <!--<p style="text-align:center;font-size:20px;"/><label for="firstName">First Name:</label><br/>-->
+   <div class="field">Personal Information:</div>
+   <div class="field-name"><label for="firstName">First Name:</label><br/></div>
+   <input type="text" id="firstName" name="first-name" placeholder="Example: Jane"/><br/><br/>
+   <!--<p style="text-align:center;font-size:20px;"/><label for="lastName">Last Name:</label><br/>-->
+   <div class="field-name">
+     <label for="lastName">Last Name:</label><br/></div>
+   <input type="text" id="lastName" name="last-name" placeholder="Example: Doe" /><br/><br/>
+  
+
+   
+   <div class="state"><label for="state">Where are we shipping to?</label></div><br/>
+   <div class="select">
+   <select id="state" name="state">
+       <option value="FL">Florida</option>
+       <option value="CA">California</option>
+       <option value="IN">Indiana</option>
+       </select></p><br/>
+       </div>
+      
+    <div class="instructions">
+    <label>Special Instructions:</label> 
+    </div><br/>
+    <textarea name="specialinstructions"></textarea><br/>
+
+    <!--<p style="text-align:center;font-size:20px;"/><label for="checkbox">Would you like express shipping?</label><br/>
+    <input type="checkbox" id="expressshipping" value="yes"/>yes</p><br/>
+    <p style="text-align:center;font-size:18px;"/><input type="checkbox" id="expressshipping" value="no"/>no</p><br/>-->
+    <div class="checkboxquestion"><br/>
+    <label for="checkboxquestion">Would you like to recieve an email newsletter containing information and deals on more products?</label><br/><br/></div>
+    <input type="checkbox" id="newsletter" value="yes"/>yes<p><br/>
+    <input type="checkbox" id="newsletter" value="no"/>no</p><br/>
+   <button type="submit">Submit Order</button>
+    
+
+
+
+    </form>
+  
+  
+  
+  
+  </div>
 </body>
 </html>

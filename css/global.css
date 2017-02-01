@@ -8,7 +8,14 @@ img {
 
 body {
     padding: 20px;
-    background: #f5f5f5;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../img/sunset.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-size: cover;
 }
 .card {
     padding: 20px;
@@ -16,33 +23,66 @@ body {
     background-color: #ffffff; 
     max-width: 400px;
     margin: 0 auto;
+    text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
 .field {
     margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
-
-.field>label{
+.field-name {
+    font-size: 22px;
+}
+.colors {
+    text-align: center;
+}
+.radio { 
+    text-align: center;
+}
+.size {
+    font-weight: bold; 
+    font-size: 24px;
+}
+.field-color {
+    font-weight: bold;
+    font-size: 24px;
+}
+.state {
+    font-weight: bold;
+    font-size: 24px;
+}
+.checkboxquestion {
+    font-weight: bold;
+}
+.instructions {
+    font-weight: bold;
+    font-size: 22px;
+}
+input, textarea {
+    border-radius: 5px;
+}
+/*.field >label{
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-}
+}*/
 
-.field > input[type=text],
+/*.field > input[type=text],
 .field > input[type=password] {
     width: 100%;
     height: 40px;
     border: 1 px solid silver;
     border-radius: 4pxg; 
     box-shadow: inset 2px 2px 5px rgba(0,0,0,0,0.1)
-}
+}*/
 
-.field > select {
+.select {
     width: 100%;
     height: 40px;
 }
-
+/*
 .field.labels-wrapping > label {
     font-weight: normal;
 }
@@ -51,23 +91,22 @@ body {
     font-weight: bold;
 }
 
-}
+}*/
 
-.field.field-centered {
+/*.field.field-centered {
     text-align: center;
-}
+}*/
 
-.field > button {
-    background: darkslateblue;
-    color: white;
+button {
+    background: #0c9;
+    color: #000;
     border: none; 
     padding: 15px;
     font-weight: bold;
     border-radius: 4px;
     transition: all .3s ease;
+    animation-iteration-count: 1;
 }
+button {
 
-.field > button: hover {
-    transform: scale(2); 
 }
-
