@@ -98,7 +98,7 @@ input, textarea {
 }*/
 
 button {
-    background: #0c9;
+    background: #34baa0;
     color: #000;
     border: none; 
     padding: 15px;
@@ -106,7 +106,4 @@ button {
     border-radius: 4px;
     transition: all .3s ease;
     animation-iteration-count: 1;
-}
-button {
-
 }
